@@ -46,7 +46,7 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
   
 3. Run *TAppEncoder.exe* on Windows or *TAppEncoderStatic* on Linux.
 
-	Examples: *RUN_LDP.bat* and *RUN_LDP.sh*
+	Examples: *RUN_AI.bat* and *RUN_AI.sh*
 
 # Deep Learning Based HM Encoder (Inter-mode)
 
