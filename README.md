@@ -38,7 +38,7 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
 
 2. Path into *HM-16.5_AI\bin\vc10\x64\Release*
 
-2. Set upper/lower thresholds for 3-level CU partition in file *Thr_info.txt*
+   Set upper/lower thresholds for 3-level CU partition in file *Thr_info.txt*
   
 	Format: [8 $\bar{\alpha}_1$ $\alpha_1$ $\bar{\alpha}_2$ $\alpha_2$ $\bar{\alpha}_3$ $\alpha_3$]
   
@@ -47,6 +47,9 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
 3. Run *TAppEncoder.exe* on Windows or *TAppEncoderStatic* on Linux.
 
 	Examples: *RUN_AI.bat* and *RUN_AI.sh*
+	
+   Note: It is hightly recommanded to run on x64 platform, which supports encoding high-resolution sequences normally. If to run with x86, you need to rebuild the project and re-generate the executable files above.
+    
 
 # Deep Learning Based HM Encoder (Inter-mode)
 
@@ -117,6 +120,7 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
 6. Run *TAppEncoder.exe* on Windows or *TAppEncoderStatic* on Linux.
 
 	Examples: *RUN_LDP.bat* and *RUN_LDP.sh*
+   Note: It is hightly recommanded to run on x64 platform, which supports encoding high-resolution sequences normally. If to run with x86, you need to rebuild the project and re-generate the executable files above.
 
 # References
 
