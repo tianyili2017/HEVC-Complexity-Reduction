@@ -125,7 +125,7 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
 
 # References
 
-[1] M. Xu, T. Li, Z. Wang, X. Deng, R. Yang and Z. Guan, (2018). Reducing Complexity of HEVC: A Deep Learning Approach. arXiv preprint arXiv: 1710.01218.
+[1] M. Xu, T. Li, Z. Wang, X. Deng, R. Yang and Z. Guan, "Reducing Complexity of HEVC: A Deep Learning Approach," in IEEE Transactions on Image Processing. (Early Access)
 
 [2] T. Li, M. Xu and X. Deng, "A deep convolutional neural network approach for complexity reduction on intra-mode HEVC," 2017 IEEE International Conference on Multimedia and Expo (ICME), Hong Kong, Hong Kong, 2017, pp. 1255-1260.
 
