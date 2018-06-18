@@ -1,3 +1,5 @@
+Programs to test the performance of our deep learning based complexity reduction approach for HEVC, at both intra- and inter-modes.
+
 # Deep Learning Based HM Encoder (Intra-mode)
 This encoder is used for evaluating the performance of our deep ETH-CNN based approach [1] (improved from the conference version [2] published on IEEE ICME) at All-Intra configuration. The main part is modified from the standard reference software HM 16.5 [3], coded with C++. The proposed ETH-CNN is realized based on Tensorflow, coded with Python 3.5. For evaluating the performance of our deep learning based approach, the Python program is invoked inside the HM encoder. 
 To encode a YUV file, the probability of CU partition for all the frames is predicted in advance, before the encoding process in HM really starts. Compared with the upper and lower thresholds at three levels, the probability is read to finally determine the CU partition by HM. In this way, most redundant checking of RD cost checking can be skipped, thus save the overall encoding time significantly.
