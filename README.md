@@ -99,7 +99,7 @@ Also, three Python files are included for predicting the CU partition with the p
 
 For more details, please refer to the comments in these source codes.
 
-This program is used to evaluate the performance of our deep ETH-CNN based approach at All-Intra configuration.
+This program is used to evaluate the performance of our deep ETH-CNN+ETH-LSTM based approach at the Low-Delay-P configuration.
 
 ## Running Instructions
 
@@ -127,7 +127,7 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
 
 # References
 
-[1] M. Xu, T. Li, Z. Wang, X. Deng, R. Yang and Z. Guan, "Reducing Complexity of HEVC: A Deep Learning Approach," in IEEE Transactions on Image Processing. (Early Access)
+[1] M. Xu, T. Li, Z. Wang, X. Deng, R. Yang and Z. Guan, "Reducing Complexity of HEVC: A Deep Learning Approach", in IEEE Transactions on Image Processing, vol. 27, no. 10, pp. 5044-5059, Oct. 2018.
 
 [2] T. Li, M. Xu and X. Deng, "A deep convolutional neural network approach for complexity reduction on intra-mode HEVC," 2017 IEEE International Conference on Multimedia and Expo (ICME), Hong Kong, Hong Kong, 2017, pp. 1255-1260.
 
