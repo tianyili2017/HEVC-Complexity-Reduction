@@ -65,9 +65,9 @@ def get_train_valid_test_sets(DATA_SWITCH):
         VALIDSET = 'AI_Valid_143925.dat_shuffled'
         TESTSET  = 'AI_Test_287850.dat_shuffled'
     elif DATA_SWITCH == 1: # demo sets
-        TRAINSET = 'AI_Train_20000.dat_shuffled'
-        VALIDSET = 'AI_Valid_10000.dat_shuffled'
-        TESTSET  = 'AI_Test_10000.dat_shuffled'
+        TRAINSET = 'AI_Train_5000.dat_shuffled'
+        VALIDSET = 'AI_Valid_5000.dat_shuffled'
+        TESTSET  = 'AI_Test_5000.dat_shuffled'
     elif DATA_SWITCH == 2: # choose other files if necessary
         pass
 
