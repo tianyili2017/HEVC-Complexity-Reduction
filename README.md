@@ -19,13 +19,13 @@ To encode a YUV file, the probability of CU partition for all the frames is pred
 
 In HM 16.5, four C++ files have been modified, as below.
 
-- source\App\TAppEncoder\TAppEncCfg.cpp
+- source/App/TAppEncoder/TAppEncCfg.cpp
 
-- source\Lib\TLibCommon\TComPic.h
+- source/Lib/TLibCommon/TComPic.h
 
-- source\Lib\TLibEncoder\TEncGOP.cpp
+- source/Lib/TLibEncoder/TEncGOP.cpp
 
-- source\Lib\TLibEncoder\TEncCu.cpp
+- source/Lib/TLibEncoder/TEncCu.cpp
 
 Among them, *TAppEncCfg.cpp* directly invokes the Python program. 
 
@@ -41,7 +41,7 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
 
 1. Install Tensorflow. Versions $\ge$ 1.4.0 are recommanded.
 
-2. Path into *HM-16.5_AI\bin\vc10\x64\Release*
+2. Path into *HM-16.5_AI/bin/vc10/x64/Release*
 
    Set upper/lower thresholds for 3-level CU partition in file *Thr_info.txt*
   
@@ -88,15 +88,15 @@ This encoder is used for evaluating the performance of our deep ETH-CNN + ETH-LS
 
 In HM 16.5, five C++ files have been modified, as below.
 
-- source\Lib\TLibCommon\TComPic.h
+- source/Lib/TLibCommon/TComPic.h
 
-- source\Lib\TLibEncoder\TEncGOP.cpp
+- source/Lib/TLibEncoder/TEncGOP.cpp
 
-- source\Lib\TLibEncoder\TEncCu.cpp
+- source/Lib/TLibEncoder/TEncCu.cpp
 
-- source\Lib\TLibEncoder\TEncSearch.cpp
+- source/Lib/TLibEncoder/TEncSearch.cpp
 
-- source\Lib\TLibEncoder\TEncSlice.cpp
+- source/Lib/TLibEncoder/TEncSlice.cpp
 
 Among them, the *TEncGOP.cpp* directly invokes ETH-CNN + ETH_LSTM.
 
@@ -110,7 +110,7 @@ This program is used to evaluate the performance of our deep ETH-CNN+ETH-LSTM ba
 
 1. Install Tensorflow. Versions $\ge$ 1.4.0 are recommanded.
 
-2. Path into *HM-16.5_LDP\bin\vc10\x64\Release*
+2. Path into *HM-16.5_LDP/bin/vc10/x64/Release*
 
 2. Set upper/lower thresholds for 3-level CU partition in file *Thr_info.txt*
   
@@ -132,7 +132,7 @@ This program is used to evaluate the performance of our deep ETH-CNN+ETH-LSTM ba
 	
 # Training ETH-CNN (Intra-mode)
 
-Relative folders: *HM-16.5_Extract_Data/*, *AI_Info*, *Extract_Data* and *ETH-CNN_AI_Training*
+Relative folders: *HM-16.5_Extract_Data/*, *AI_Info/*, *Extract_Data/* and *ETH-CNN_AI_Training/*
 
 These programs are used for training the deep ETH-CNN at All-Intra configuration. 
 Require: 12 YUV files (and 96 *Info_XX.dat* files, optional)
