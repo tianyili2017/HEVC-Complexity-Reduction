@@ -39,7 +39,7 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
 
 ## Running Instructions
 
-1. Install Tensorflow. Versions $\ge$ 1.4.0 are recommanded.
+1. Install Tensorflow. Versions $\ge$ 1.8.0 are recommanded.
 
 2. Path into *HM-16.5_Test_AI/bin/vc10/x64/Release*
 
@@ -108,7 +108,7 @@ This program is used to evaluate the performance of our deep ETH-CNN+ETH-LSTM ba
 
 ## Running Instructions
 
-1. Install Tensorflow. Versions $\ge$ 1.4.0 are recommanded.
+1. Install Tensorflow. Versions $\ge$ 1.8.0 are recommanded.
 
 2. Path into *HM-16.5_Test_LDP/bin/vc10/x64/Release*
 
@@ -154,7 +154,7 @@ Require: 12 YUV files (and 96 *Info_XX.dat* files, optional)
 
 # References
 
-[1] M. Xu, T. Li, Z. Wang, X. Deng, R. Yang and Z. Guan, "Reducing Complexity of HEVC: A Deep Learning Approach", in IEEE Transactions on Image Processing, vol. 27, no. 10, pp. 5044-5059, Oct. 2018.
+[1] M. Xu, T. Li, Z. Wang, X. Deng, R. Yang and Z. Guan, "Reducing Complexity of HEVC: A Deep Learning Approach", in IEEE Transactions on Image Processing (TIP), vol. 27, no. 10, pp. 5044-5059, Oct. 2018.
 
 [2] T. Li, M. Xu and X. Deng, "A deep convolutional neural network approach for complexity reduction on intra-mode HEVC," 2017 IEEE International Conference on Multimedia and Expo (ICME), Hong Kong, Hong Kong, 2017, pp. 1255-1260.
 
