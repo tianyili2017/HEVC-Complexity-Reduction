@@ -2,7 +2,7 @@ Programs for our deep learning based complexity reduction approach for HEVC, at 
 
 # Deep Learning Based HM Encoder (Test at Intra-mode)
 
-Relative folder: *HM-16.5_AI/*
+Relative folder: *HM-16.5_Test_AI/*
 
 This encoder is used for evaluating the performance of our deep ETH-CNN based approach [1] (improved from the conference version [2] published on IEEE ICME) at All-Intra configuration. The main part is modified from the standard reference software HM 16.5 [3], coded with C++. The proposed ETH-CNN is realized based on Tensorflow, coded with Python 3.5. For evaluating the performance of our deep learning based approach, the Python program is invoked inside the HM encoder. 
 To encode a YUV file, the probability of CU partition for all the frames is predicted in advance, before the encoding process in HM really starts. Compared with the upper and lower thresholds at three levels, the probability is read to finally determine the CU partition by HM. In this way, most redundant checking of RD cost checking can be skipped, thus save the overall encoding time significantly.
@@ -41,7 +41,7 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
 
 1. Install Tensorflow. Versions $\ge$ 1.4.0 are recommanded.
 
-2. Path into *HM-16.5_AI/bin/vc10/x64/Release*
+2. Path into *HM-16.5_Test_AI/bin/vc10/x64/Release*
 
    Set upper/lower thresholds for 3-level CU partition in file *Thr_info.txt*
   
@@ -58,7 +58,7 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
 
 # Deep Learning Based HM Encoder (Test at Inter-mode)
 
-Relative folder: *HM-16.5_LDP/*
+Relative folder: *HM-16.5_Test_LDP/*
 
 This encoder is used for evaluating the performance of our deep ETH-CNN + ETH-LSTM based approach [1] at Low-Delay-P configuration. The main part is modified from the standard reference software HM 16.5, coded with C++. The proposed ETH-CNN and ETH-LSTM are realized based on Tensorflow, coded with Python 3.5. For evaluating the performance of our deep learning based approach, the HM and the Python program are linked together via sharing intermediate information when running both the programs. When encoding a YUV file, the CU partition is predicted frame-wise in accord with the encoding process in HM. For a certain frame, a simplified setting is adopted for quick pre-encoding, to obtaining the residue of this frame in HM. Next, the residue is fed into ETH-CNN + ETH-LSTM in the Python program. Then the Python program predicts the probability of CU partition for this frame. Compared with the upper and lower thresholds at three levels, the probability is read to finally determine the CU partition by HM. In this way, most redundant checking of RD cost can be skipped, thus save the overall encoding time significantly.
 
@@ -110,7 +110,7 @@ This program is used to evaluate the performance of our deep ETH-CNN+ETH-LSTM ba
 
 1. Install Tensorflow. Versions $\ge$ 1.4.0 are recommanded.
 
-2. Path into *HM-16.5_LDP/bin/vc10/x64/Release*
+2. Path into *HM-16.5_Test_LDP/bin/vc10/x64/Release*
 
 2. Set upper/lower thresholds for 3-level CU partition in file *Thr_info.txt*
   
