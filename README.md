@@ -41,7 +41,7 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
 
 1. Install Tensorflow. Versions $\ge$ 1.8.0 are recommanded.
 
-2. Path into *HM-16.5_Test_AI/bin/vc10/x64/Release*
+2. Path into *HM-16.5_Test_AI/Release*
 
    Set upper/lower thresholds for 3-level CU partition in file *Thr_info.txt*
   
@@ -49,11 +49,11 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
   
 	Example: [8 0.5 0.5 0.5 0.5 0.5 0.5]
   
-3. Run *TAppEncoder.exe* on Windows or *TAppEncoderStatic* on Linux.
+3. Run *TAppEncoderStatic* on Linux or *TAppEncoder.exe* on Windows.
 
-	Examples: *RUN_AI.bat* and *RUN_AI.sh*
+	Examples: *RUN_AI.sh* and *RUN_AI.bat*
 	
-	Note: It is hightly recommanded to run on x64 platform, which supports encoding high-resolution sequences normally. If to run with x86, you need to rebuild the project and re-generate the executable files above.
+	Note: It is hightly recommanded to run on Linux (64-bit) platform, which supports encoding high-resolution video sequences normally. If to run with other platform, you need to rebuild the project and re-generate the executable files.
     
 
 # Deep Learning Based HM Encoder (Test at Inter-mode)
@@ -110,7 +110,7 @@ This program is used to evaluate the performance of our deep ETH-CNN+ETH-LSTM ba
 
 1. Install Tensorflow. Versions $\ge$ 1.8.0 are recommanded.
 
-2. Path into *HM-16.5_Test_LDP/bin/vc10/x64/Release*
+2. Path into *HM-16.5_Test_LDP/Release*
 
 2. Set upper/lower thresholds for 3-level CU partition in file *Thr_info.txt*
   
@@ -124,15 +124,15 @@ This program is used to evaluate the performance of our deep ETH-CNN+ETH-LSTM ba
 
 5. Wait for about 1~10s, until *Python: Tensorflow initialized.* is shown.
 
-6. Run *TAppEncoder.exe* on Windows or *TAppEncoderStatic* on Linux.
+6. Run *TAppEncoderStatic* on Linux or *TAppEncoder.exe* on Windows.
 
-	Examples: *RUN_LDP.bat* and *RUN_LDP.sh*
+	Examples: *RUN_LDP.sh* and *RUN_LDP.bat*
 	
-	Note: It is hightly recommanded to run on x64 platform, which supports encoding high-resolution sequences normally. If to run with x86, you need to rebuild the project and re-generate the executable files above.
+	Note: It is hightly recommanded to run on Linux (64-bit) platform, which supports encoding high-resolution video sequences normally. If to run with other platform, you need to rebuild the project and re-generate the executable files.
 	
 # Training ETH-CNN (Intra-mode)
 
-Relative folders: *HM-16.5_Extract_Data/*, *AI_Info/*, *Extract_Data/* and *ETH-CNN_AI_Training/*
+Relative folders: *HM-16.5_Extract_Data/*, *AI_Info/*, *Extract_Data/* and *ETH-CNN_Training_AI/*
 
 These programs are used for training the deep ETH-CNN at All-Intra configuration. 
 Require: 12 YUV files (and 96 *Info_XX.dat* files, optional)
@@ -150,7 +150,7 @@ Require: 12 YUV files (and 96 *Info_XX.dat* files, optional)
 
 3. Train:
 
-   Run *ETH-CNN_AI_Training/train_CNN_CTU64.py* following the instruction *ETH-CNN_AI_Training/readme.txt*.
+   Run *ETH-CNN_Training_AI/train_CNN_CTU64.py* following the instruction *ETH-CNN_Training_AI/readme.txt*.
 
 # References
 
