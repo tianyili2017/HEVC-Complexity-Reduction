@@ -2314,7 +2314,7 @@ Void TAppEncCfg::xPrintParameter()
 {
 	// 20171221 added
 	// Invoke "video_to_cu_depth.py" with Tensorflow to predict the CU partition for the whole YUV sequence.
-	char cmd[100];
+	char cmd[1000]; // 20190505 modified: "cmd[100]" -> "cmd[1000]". Support longer path of YUV file. 
 	// Note: only Python 3 is supported.
 	sprintf(cmd, "python video_to_cu_depth.py %s %d %d %d", m_pchInputFile, m_iSourceWidth, m_iSourceHeight, m_iQP);
 	printf("%s\n", cmd);
