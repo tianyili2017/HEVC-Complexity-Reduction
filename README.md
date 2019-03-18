@@ -54,7 +54,7 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
 	Examples: *RUN_AI.sh* and *RUN_AI.bat*
 	
 	Note: It is hightly recommanded to run on Linux (64-bit) platform, which supports encoding high-resolution video sequences normally. If to run with other platform, you need to rebuild the project and re-generate the executable files.
-    
+   
 
 # Deep Learning Based HM Encoder (Test at Inter-mode)
 
@@ -130,7 +130,7 @@ This program is used to evaluate the performance of our deep ETH-CNN+ETH-LSTM ba
 	
 	Note: It is hightly recommanded to run on Linux (64-bit) platform, which supports encoding high-resolution video sequences normally. If to run with other platform, you need to rebuild the project and re-generate the executable files.
 	
-# Training ETH-CNN (Intra-mode)
+# Training at Intra-mode
 
 Relative folders: *HM-16.5_Extract_Data/*, *AI_Info/*, *Extract_Data/* and *ETH-CNN_Training_AI/*
 
@@ -151,6 +151,41 @@ Require: 12 YUV files (and 96 *Info_XX.dat* files, optional)
 3. Train:
 
    Run *ETH-CNN_Training_AI/train_CNN_CTU64.py* following the instruction *ETH-CNN_Training_AI/readme.txt*.
+
+
+# Training at Inter-mode
+
+Relative folders: *HM-16.5_Extract_Data/*, *HM-16.5_Resi_Pre/*, *LDP_Info/*, *Extract_Data/*, *ETH-CNN_Training_LDP/* and *ETH-LSTM_Training_LDP/*
+
+These programs are used for training the deep ETH-CNN and ETH-LSTM at Low-Delay-P configuration. 
+
+Require: 111 YUV files  (and 888 *Info_XX.dat* files, optional)
+
+1. Build databases:
+   (1) Compress 111 YUV files with encoder *HM-16.5_Extract_Data/bin/TAppEncoderStatic* at 4 QPs, to extract *str_XX.bin*, *Info_XX.dat* and *log_XX.txt* files. 
+
+   (This step can be skipped, because all *Info_XX.dat* files are already provided in folder *LDP_Info/* )
+
+   (2) Compress 111 YUV files with encoder *HM-16.5\_Resi\_Pre/bin/TAppEncoderStatic* at 4 QPs, to obtain 444 *resi_XX.yuv* files.
+
+2. Extract data for ETH-CNN:
+
+   To configure: variables *CONFIG*, *YUV_PATH_RESI* and *INFO_PATH* in *Extract_Data/extract_data_LDP_LDB_RA.py*.
+
+   Run *Extract_Data/extract_data_LDP_LDB_RA.py* to get training, validation and test data. For each data file, both shuffled and unshuffled versions are generated. Sample size: 16516 bytes.
+
+3. Train ETH-CNN:
+   Run *ETH-CNN_Training_LDP/train_resi_CNN_CTU64.py* for all 4 QPs at one time.
+
+4. Extract data for ETH-LSTM:
+
+   To configure: variables *MODEL_FILE*, *INPUT_PATH* and *OUTPUT_PATH* in *ETH-LSTM_Training_LDP/get_LSTM_input.py*.
+
+   Run *ETH-LSTM_Training_LDP/get_LSTM_input.py*. Use unshuffled training/validation/test files in step 2 to generate data for ETH-LSTM. Sample size: 37264 bytes.
+
+5. Train ETH-LSTM:
+
+   Run *ETH-CNN_Training_LDP/train_LSTM_CTU64.py* for 4 QPs separately.
 
 # References
 
