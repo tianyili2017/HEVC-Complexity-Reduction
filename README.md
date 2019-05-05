@@ -44,17 +44,18 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
 2. Path into *HM-16.5_Test_AI/Release*
 
    Set upper/lower thresholds for 3-level CU partition in file *Thr_info.txt*
-  
-	Format: [8 $\bar{\alpha}_1$ $\alpha_1$ $\bar{\alpha}_2$ $\alpha_2$ $\bar{\alpha}_3$ $\alpha_3$]
-  
-	Example: [8 0.5 0.5 0.5 0.5 0.5 0.5]
-  
+
+   Format: [$\bar{\alpha}_1$ $\alpha_1$ $\bar{\alpha}_2$ $\alpha_2$ $\bar{\alpha}_3$ $\alpha_3$]
+
+   Example: [0.5 0.5 0.5 0.5 0.5 0.5]
+
 3. Run *TAppEncoderStatic* on Linux or *TAppEncoder.exe* on Windows.
 
-	Examples: *RUN_AI.sh* and *RUN_AI.bat*
-	
-	Note: It is hightly recommanded to run on Linux (64-bit) platform, which supports encoding high-resolution video sequences normally. If to run with other platform, you need to rebuild the project and re-generate the executable files.
-   
+  Examples: *RUN_AI.sh* and *RUN_AI.bat*
+
+  Note: It is highly recommended to run on Linux (64-bit) platform, which supports encoding high-resolution video sequences normally. If to run with other platform, you need to rebuild the project and re-generate the executable files. 
+
+  Also, please make sure the path of YUV file is not so long (shorter than 900 characters), because the file path is a part of a command line for invoking the Python program and the maximum length of the command line is 1000.
 
 # Deep Learning Based HM Encoder (Test at Inter-mode)
 
@@ -114,9 +115,9 @@ This program is used to evaluate the performance of our deep ETH-CNN+ETH-LSTM ba
 
 2. Set upper/lower thresholds for 3-level CU partition in file *Thr_info.txt*
   
-	Format: [108 $\bar{\alpha}_1$ $\alpha_1$ $\bar{\alpha}_2$ $\alpha_2$ $\bar{\alpha}_3$ $\alpha_3$]
+	Format: [$\bar{\alpha}_1$ $\alpha_1$ $\bar{\alpha}_2$ $\alpha_2$ $\bar{\alpha}_3$ $\alpha_3$]
   
-	Example: [108 0.4 0.6 0.3 0.7 0.2 0.8]
+	Example: [0.4 0.6 0.3 0.7 0.2 0.8]
 
 3. Ensure there exists no any signal file, *pred_start.sig* or *pred_end.sig*, for avoiding unproper behavier of communication between the HM encoder and the python program *resi_to_cu_depth_LDP.py*.
 
@@ -128,7 +129,7 @@ This program is used to evaluate the performance of our deep ETH-CNN+ETH-LSTM ba
 
 	Examples: *RUN_LDP.sh* and *RUN_LDP.bat*
 	
-	Note: It is hightly recommanded to run on Linux (64-bit) platform, which supports encoding high-resolution video sequences normally. If to run with other platform, you need to rebuild the project and re-generate the executable files.
+	Note: It is highly recommended to run on Linux (64-bit) platform, which supports encoding high-resolution video sequences normally. If to run with other platform, you need to rebuild the project and re-generate the executable files.
 	
 # Training at Intra-mode
 
