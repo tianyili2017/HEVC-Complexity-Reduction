@@ -53,9 +53,7 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
 
    Examples: *RUN_AI.sh* and *RUN_AI.bat*
 
-  Note: It is highly recommended to run on Linux (64-bit) platform, which supports encoding high-resolution video sequences normally. If to run with other platform, you need to rebuild the project and re-generate the executable files. 
-
-  Also, please make sure the path of YUV file is not so long (shorter than 900 characters), because the file path is a part of a command line for invoking the Python program and the maximum length of the command line is 1000.
+  Note: It is highly recommended to run on Linux (64-bit) platform, which supports encoding high-resolution video sequences normally. If to run with other platform, you need to rebuild the project and re-generate the executable files. Also, please make sure the path of YUV file is not so long (shorter than 900 characters), because the file path is a part of a command line for invoking the Python program and the maximum length of the command line is 1000.
 
 # Deep Learning Based HM Encoder (Test at Inter-mode)
 
