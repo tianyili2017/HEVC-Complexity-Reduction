@@ -51,7 +51,7 @@ This program is used to evaluate the performance of our deep ETH-CNN based appro
 
 3. Run *TAppEncoderStatic* on Linux or *TAppEncoder.exe* on Windows.
 
-  Examples: *RUN_AI.sh* and *RUN_AI.bat*
+   Examples: *RUN_AI.sh* and *RUN_AI.bat*
 
   Note: It is highly recommended to run on Linux (64-bit) platform, which supports encoding high-resolution video sequences normally. If to run with other platform, you need to rebuild the project and re-generate the executable files. 
 
@@ -129,7 +129,7 @@ This program is used to evaluate the performance of our deep ETH-CNN+ETH-LSTM ba
 
 	Examples: *RUN_LDP.sh* and *RUN_LDP.bat*
 	
-	Note: It is highly recommended to run on Linux (64-bit) platform, which supports encoding high-resolution video sequences normally. If to run with other platform, you need to rebuild the project and re-generate the executable files.
+Note: It is highly recommended to run on Linux (64-bit) platform, which supports encoding high-resolution video sequences normally. If to run with other platform, you need to rebuild the project and re-generate the executable files.
 	
 # Training at Intra-mode
 
