@@ -8,4 +8,4 @@ This program is used to train ETH-CNN at the All-Intra configuration. Among all 
 
 (4) After training completes, path into folder "Model/", and you will find the trained model with corresponding data files, including TXT files recording loss/accuracy and PNG files plotting the curves.
 
-Note: Without any editing, the program can also be directly executed. In this case, ETH-CNN will be trained for QP 22 by default.
+Note: Without any editing, the program can also be directly executed. In this case, ETH-CNN will be trained for QP 22 by default. However, because of the limited training samples (5000 samples) in the demo data set, this will cause overfitting issues, only used for testing whether the program can be normally run with necessary libraries installed (e.g., TensorFlow). If need to reproduce the results in our paper, please first generate the whole data sets by following the section "Training at Intra-mode". Thank you for understanding.
