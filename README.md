@@ -29,7 +29,7 @@ In HM 16.5, four C++ files have been modified, as below.
 
 Among them, *TAppEncCfg.cpp* directly invokes the Python program. 
 
-Note: the codes are based on the assumption that the default Python is Python 3 in the system (Windows or Linux). If it is false, please modify the 2319th line of *TAppEncCfg.cpp* by changing the string *python* into *python 3*, and rebuild the HM.
+Note: it is assumed that the default Python is Python 3 in the system (Windows or Linux). If Python 3 is not default, please edit the 2319th line of *TAppEncCfg.cpp* by changing the string *python* into *python3*, and rebuild the HM.
 
 Also, two Python files are included for predicting the CU partition with the proposed deep networks. The top file is *video_to_cu_depth.py*, monitoring the overall procedure of adopting ETH-CNN, together with necessary steps such as file reading/writting, data transferring, network feeding, etc. The specific network architecture is defined in *net_CNN.py*. 
 
